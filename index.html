@@ -1,35 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-
-<head>
-    <title>Timer</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-</head>
-
-<body>
-    < Timer contains three input elements to allow user to enter the values of hours, minutes + seconds -->
-    <!-- <div class="container">
-        <h1>Timer</h1>
-        <div class="ipt">
-            <input id="inputh" type="number" placeholder="hour">
-            <input id="inputm" type="number" placeholder="minute">
-            <input id="inputs" type="number" placeholder="second">
-        </div>
-        elements to start, pause and stop timer respectively
-        Each button has an onclick event, when button is selected the function is executed -->
-        <!-- <div class="btn">
-            <input id="tmr-1-btn-start" class=" btn" type="button" value="start" onclick="btn_start_onclick(1)" />
-            <input id="tmr-2-btn-start" class="btn" type="button" value="start" onclick="btn_start_onclick(2)" />
-            < <button id="btn-start" onclick="start_counting()">Start</button>
-            <button id="btn-pause" onclick="pause_counting()">Pause</button>
-            <button id="btn-stop" onclick="end_counting()">Stop</button> -->
-            
-        <!-- </div>
-        <p id="currentTime">current time: </p>
-    </div>
-</body> --> 
-
 <!DOCTYPE html>
 <html>
 
@@ -40,44 +8,23 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="timmer">
-            <h1>Timer 1</h1>
-            <div>
-                <input id="ipt-1-h" class="ipt" type="number" placeholder="hour" value="0" />
-                <span>:</span>
-                <input id="ipt-1-m" class="ipt" type="number" placeholder="minute" value="0" />
-                <span>:</span>
-                <input id="ipt-1-s" class="ipt" type="number" placeholder="second" value="5" />
-            </div>
-            <div>
-                <input id="tmr-1-btn-start" class=" btn btn-start" type="button" value="Start"
-                    onclick="btn_start_onclick(1)" />
-                <input id="tmr-1-btn-pause" disabled="true" class="btn btn-pause" type="button" value="Pause"
-                    onclick="btn_pause_onclick(1)" />
-                <input id="tmr-1-btn-stop" disabled="true" class="btn btn-stop" type="button" value="Stop"
-                    onclick="btn_stop_onclick(1)" />
-            </div>
+     <!-- Timer contains three input elements to allow user to enter the values of hours, minutes + seconds  -->
+     <div class="container">
+        <h1>Timer</h1>
+        <div class="ipt">
+            <input id="inputh" type="number" placeholder="hour">
+            <input id="inputm" type="number" placeholder="minute">
+            <input id="inputs" type="number" placeholder="second">
         </div>
-
-        <div class="timmer">
-            <h1>Timer 2</h1>
-            <div>
-                <input id="ipt-2-h" class="ipt" type="number" placeholder="hour" value="0" />
-                <span>:</span>
-                <input id="ipt-2-m" class="ipt" type="number" placeholder="minute" value="1" />
-                <span>:</span>
-                <input id="ipt-2-s" class="ipt" type="number" placeholder="second" value="5" />
-            </div>
-            <div>
-                <input id="tmr-2-btn-start" class="btn" type="button" value="Start" onclick="btn_start_onclick(2)" />
-                <input id="tmr-2-btn-pause" disabled="true" class="btn btn-pause" type="button" value="Pause"
-                    onclick="btn_pause_onclick(2)" />
-                <input id="tmr-2-btn-stop" disabled="true" class="btn btn-stop" type="button" value="Stop"
-                    onclick="btn_stop_onclick(2)" />
-            </div>
+        <!-- elements to start, pause and stop timer respectively
+        Each button has an onclick event, when button is selected the function is executed  -->
+         <div class="btn">
+             <button id="btn-start" onclick="start_counting()">Start</button>
+            <button id="btn-pause" onclick="pause_counting()">Pause</button>
+            <button id="btn-stop" onclick="end_counting()">Stop</button>
+            <button id="btn-clear" onclick="clear_counting()">Clear</button> 
+            
         </div>
+        <p id="currentTime">current time: </p>
     </div>
-</body>
-  
-</html>
+</body> 
