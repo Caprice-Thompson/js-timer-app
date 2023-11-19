@@ -1,3 +1,6 @@
+// TODO: border around timer app container
+//TODO: Add custom time options
+//TODO: nicer buttons for visual
 // Basic functions for an event-driven, procedural-oriented way
 // 2 sets of global variables: the hour/minute/second variables and the return value of the setInterval() function
 // 4 key functions: the event handlers for the start, pause, and stop buttons, and the execution function that is called in a loop during the countdown
