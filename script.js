@@ -10,9 +10,9 @@ document.getElementById("btn-stop").disabled = true;
 // Next, we define global variables to store hour, minute, and second values.
 
 var timer = null; // store the returned value of timer
-var h = 0; // store the value of hour
-var m = 0; // store the value of minute
-var s = 0; // store the value of second
+var h = 00; // store the value of hour
+var m = 00; // store the value of minute
+var s = 00; // store the value of second
 
 // In the start_counting() function which starts the timer, we use document.getElementById().value to get the values of the elements with id of inputh, inputm, and inputs.
 
@@ -29,7 +29,7 @@ function start_counting() {
         (h == 0 && m == 0 && s == 0) ||
         (h < 0 || m < 0 || s < 0)
     ) {
-        alert("The time entered is illegal!");
+        alert("The time entered is not valid!");
         return;
     }
 timeHelper();
@@ -117,7 +117,7 @@ function counting() {
     }
 
     // display current time
-    document.getElementById("currentTime").innerHTML = "current time: " + h + " h " + m + " m " + s + " s";
+    document.getElementById("currentTime").innerHTML = "Current Time: " + h + " h " + m + " m " + s + " s";
     document.getElementById("inputh").value = h;
     document.getElementById("inputm").value = m;
     document.getElementById("inputs").value = s;
