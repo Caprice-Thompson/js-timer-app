@@ -19,12 +19,29 @@
         <!-- elements to start, pause and stop timer respectively
         Each button has an onclick event, when button is selected the function is executed  -->
          <div class="btn">
-             <button id="btn-start" onclick="start_counting()">Start</button>
-            <button id="btn-pause" onclick="pause_counting()">Pause</button>
-            <button id="btn-stop" onclick="end_counting()">Stop</button>
-            <button id="btn-clear" onclick="clear_counting()">Clear</button> 
+             <button id="btn-start" onclick="startCounting()">Start</button>
+            <button id="btn-pause" onclick="pauseCounting()">Pause</button>
+            <button id="btn-stop" onclick="endCounting()">Stop</button>
+            <button id="btn-clear" onclick="clearCounting()">Clear</button> 
             
         </div>
-        <p id="currentTime">Current Time: </p>
+        <p id="currentTime"><strong>Time Remaining:</strong> </p>
+    </div>
+    <div class="container">
+        <h2>Popular Timers</h2>
+        <!-- elements to start, pause and stop timer respectively
+        Each button has an onclick event, when button is selected the function is executed  -->
+         <div class="options">
+             <button id="btn-option-1" onclick="countDownOptions(00,01,00)">1 min</button>
+            <button id="btn-option-2" onclick="countDownOptions(00,03,00)">3 min</button>
+            <button id="btn-option-3" onclick="countDownOptions(00,05,00)">5 min</button>
+            <button id="btn-option-4" onclick="countDownOptions(00,10,00)">10 min</button> 
+            <button id="btn-option-5" onclick="countDownOptions(00,20,00)">20 min</button> 
+            <button id="btn-option-6" onclick="countDownOptions(00,45,00)">45 min</button>
+            <button id="btn-option-7" onclick="countDownOptions(01,00,00)">1 hr</button> 
+            <button id="btn-option-8" onclick="countDownOptions(02,00,00)">2 hr</button> 
+            
+        </div>
+
     </div>
 </body> 

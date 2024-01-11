@@ -35,6 +35,15 @@ body {
         color: rgb(20, 4, 88);
         }
 
+    h2 {
+        margin: 50px;
+        font-size: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(20, 4, 88);
+        }
+
     .btn {
     margin: 10px;
     display: flex;
