@@ -1,5 +1,5 @@
 # js-timer-app
 
-Creating a simple timer application using procedural programming
+This repo contains javascript code for creating a simple timer application using procedural programming
 
 

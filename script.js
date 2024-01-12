@@ -20,9 +20,9 @@ var s = 00; // store the value of second
 // start the timer
 function startCounting() {
     // get the time entered or set a default value
-    h = +document.getElementById("inputh").value || h;
-    m = +document.getElementById("inputm").value || m;
-    s = +document.getElementById("inputs").value || s;
+    h = +document.getElementById("inputh").value;
+    m = +document.getElementById("inputm").value;
+    s = +document.getElementById("inputs").value;
 
     // check for illegal input
     if (
